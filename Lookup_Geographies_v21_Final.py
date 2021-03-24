@@ -14,7 +14,9 @@ import requests
 
 # Source data is the output of the Cognos report Student - PWL > Academic
 # Schools > HHS > Enrollment > Enrollment List - Census - w Addresses
-SES_path = 'S:/Strategic Data Manager/16 Analytics and Institutional Research/CASEY/Socioeconomic Status'
+# This is Purdue's standard enrollment report, with parents' addresses
+# added to the list output.
+SES_path = # The path to your address file.
 address_file = 'Modified Enrollment List for New Beginners/Fall 2011 - Fall 2019 Enrollment List - Census - w Addresses Clean.xlsx'
 
 raw_enrl_w_addr = pd.read_excel(os.path.join(SES_path, address_file), header=6)
